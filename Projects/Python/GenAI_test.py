@@ -1,17 +1,19 @@
 from google import genai
-from google.genai import types
+import os
 
-client = genai.Client(api_key='AIzaSyC04UB_rnVmg0lHNf23ntUmLIftafee13M')
+gapikey = os.environ.get("GOOGLE_API_KEY")
+client = genai.Client(api_key=gapikey)
+# client = genai.Client(api_key='AIzaSyBkEtUhv34zMABqdIF7fmmP_bMT5rCu9Po')
 
 # Text generation ///https://ai.google.dev/gemini-api/docs/text-generation
 # response = client.models.generate_content(
-#     model="gemini-3-flash-preview",
+#     model="gemini-1.5-flash",
 #     contents="How does AI work?"
 # )
 
 # Thinking with Gemini
 # response = client.models.generate_content(
-#     model="gemini-3-pro-preview",
+#     model="gemini-1.5-pro",
 #     contents="How does AI work?",
 #     config=types.GenerateContentConfig(
 #         thinking_config=types.ThinkingConfig(thinking_level="low")
@@ -20,13 +22,13 @@ client = genai.Client(api_key='AIzaSyC04UB_rnVmg0lHNf23ntUmLIftafee13M')
 
 # System instructions and other configurations
 # response = client.models.generate_content(
-#     model="gemini-3-flash-preview",
+#     model="gemini-1.5-flash",
 #     config=types.GenerateContentConfig(
 #         system_instruction="You are a cat. Your name is Neko."),
 #     contents="Hello there"
 # )
 # response = client.models.generate_content(
-#     model="gemini-3-flash-preview",
+#     model="gemini-1.5-flash",
 #     contents=["Explain how AI works"],
 #     config=types.GenerateContentConfig(
 #         temperature=0.1
@@ -37,7 +39,7 @@ client = genai.Client(api_key='AIzaSyC04UB_rnVmg0lHNf23ntUmLIftafee13M')
 
 # Streaming responses
 # response = client.models.generate_content_stream(
-#     model="gemini-3-flash-preview",
+#     model="gemini-1.5-flash",
 #     contents=["Explain how AI works"]
 # )
 # for chunk in response:
