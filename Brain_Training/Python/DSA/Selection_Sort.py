@@ -31,3 +31,6 @@ arry = [12,15,3,45,87,2,75,95,13]
 print(f"Array:{arry}")
 # without_swap(arry)
 with_swap(arry)
+
+# Time complexity would be O(n^2) as after one loop, the array is looped through again and again n times.
+# This means there are n⋅n comparisons done in total, so the time complexity for Bubble Sort is: n^2

@@ -18,7 +18,7 @@ def newsupdate():
         print("-------------------------------------------")
 
 def weatherupdate():
-    weatherapikey='your api key'
+    weatherapikey='4572f8cea58e0ac000da9509d9620f40'
     city= input("Please insert your city name: ")
     # state = input("Please insert your state name: ")
     country = input("Please insert your country name: ")
