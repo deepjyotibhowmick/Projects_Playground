@@ -3,7 +3,6 @@ import os
 
 gapikey = os.environ.get("GOOGLE_API_KEY")
 client = genai.Client(api_key=gapikey)
-# client = genai.Client(api_key='AIzaSyBkEtUhv34zMABqdIF7fmmP_bMT5rCu9Po')
 
 # Text generation ///https://ai.google.dev/gemini-api/docs/text-generation
 # response = client.models.generate_content(
