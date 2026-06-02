@@ -11,3 +11,6 @@ try:
 except TypeError as er:
     print("Error is: ", er)
 
+
+if __name__ == '__main__':
+    person1 = Human("Tom Cruise", "actor")

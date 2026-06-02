@@ -20,7 +20,7 @@ def monthConv():
         print(ind,end=': ')
         print(monthConversion[ind])
 
-def dictOps():
+def dictOps() ->None:
     population = {
         "China": 143,
         "India": 137,
@@ -70,7 +70,7 @@ def dict2d():
     for ind in nation:
         print(ind,end=':')
         print(nation[ind])
-# dictOps()
+dictOps()
 # # monthConv()
 # dict2d()
 

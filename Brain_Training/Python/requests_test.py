@@ -53,5 +53,5 @@ def weatherupdate():
 
 
 if __name__=='__main__':
-    # newsupdate()
-    weatherupdate()
+    newsupdate()
+    # weatherupdate()

@@ -48,7 +48,7 @@ processes = []
 
 if __name__ == '__main__':
     # spawn multiple processes to download images in parallel
-    for i in range(1, 6):
+    for i in range(1, 50):
         p = multiprocessing.Process(target=download_files, args=(url, i))
         p.start()
         processes.append(p)

@@ -14,6 +14,7 @@ class Student:
     def full_marks():
         f_marks = 100
         return f_marks
+
     @classmethod
     def change_state(cl,newstate): #to change class variable which is independent from instance
         cl.state= newstate
@@ -28,7 +29,7 @@ class Student:
 
 a = Student("Deep")
 a.class_name=10 # whatever assigning through object/instance is called instance variable and it has high precedence
-Student.marks(a,93,90) #everytime object call a method of class, it's execute like this, first send its object name
+Student.marks(a,sci=90,math=93) #everytime object call a method of class, it's execute like this, first send its object name
 
 b = Student("Moni")
 b.school_name ="Rohini High"
